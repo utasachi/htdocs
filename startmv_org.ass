@@ -1,0 +1,32 @@
+[Script Info]
+Title: startmv
+Original Script: げろりん
+ScriptType: v4.00+
+PlayResX: 1024
+PlayResY: 576
+Timer: 100.0000
+WrapStyle: 1
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title1,メイリオ,72,&H00772222,&H00DD8888,&H00FFEEEE,&H99000000,-1,0,0,0,100,100,0,0,1,5,1,1,30,30,15,128
+Style: Title2,メイリオ,30,&H00772222,&H00DD8888,&H00FFEEEE,&H99000000,-1,0,0,0,100,100,0,0,1,3,1,1,30,30,15,128
+Style: Kanji1,メイリオ,48,&H00552277,&H00BB88DD,&H00EEEEFF,&H99000000,-1,0,0,0,100,100,0,0,1,4,3,1,30,30,15,128
+Style: Kanji2,メイリオ,26,&H00552277,&H00BB88DD,&H00EEEEFF,&H99000000,-1,0,0,0,100,100,0,0,1,4,3,1,30,30,15,128
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:05:00.00,Title1,,0000,0000,0000,Karaoke0,{\pos( 50, 90)}{\fad(1000,5)}【もちからWeb^2】　スタート♪
+Dialogue: 0,0:00:00.00,0:05:00.00,Kanji1,,0000,0000,0000,Karaoke1,{\pos(100,150)}{\fad(1000,5)}
+Dialogue: 0,0:00:00.00,0:05:00.00,Kanji1,,0000,0000,0000,Karaoke2,{\pos(100,210)}{\fad(1000,5)}
+
+Dialogue: 0,0:00:01.00,0:05:00.00,Title2,,0000,0000,0000,Karaoke,{\pos(100,270)}{\fad(1000,5)}1.PCやスマホで SSID / PASS のWi-Fiに接続
+Dialogue: 0,0:00:02.00,0:05:00.00,Title2,,0000,0000,0000,Karaoke,{\pos(100,300)}{\fad(1000,5)}2.ブラウザで URL を入力するとカラオケのナビ画面が表示されます
+Dialogue: 0,0:00:03.00,0:05:00.00,Title2,,0000,0000,0000,Karaoke,{\pos(100,330)}{\fad(1000,5)}3.「はじめにお読みください.html」にお目通しください
+Dialogue: 0,0:00:04.00,0:05:00.00,Title2,,0000,0000,0000,Karaoke,{\pos(100,360)}{\fad(1000,5)}4.歌順カードが手元にきたら曲を登録しカードを次の人に回してください
+Dialogue: 0,0:00:05.00,0:05:00.00,Title2,,0000,0000,0000,Karaoke,{\pos(100,390)}{\fad(1000,5)}5.最初の人が曲を登録したら[:]メニューから[次の曲]を押せば開始です！
+Dialogue: 0,0:00:00.00,0:05:00.00,Kanji2,,0000,0000,0000,Karaoke,{\pos(865,110)}{\fad(1000,5)}[ Wi-Fi ]
+Dialogue: 0,0:00:00.00,0:05:00.00,Kanji2,,0000,0000,0000,Karaoke,{\pos(865,310)}{\fad(1000,5)}[ U R L ]
+Dialogue: 0,0:00:01.00,0:05:00.00,Kanji2,,0000,0000,0000,Karaoke,{\pos(50,450)}{\fad(1000,5)}[今日のトピック]
+Dialogue: 0,0:00:02.00,0:05:00.00,Kanji2,,0000,0000,0000,Karaoke3,{\pos(100,485)}{\fad(1000,5)}
+Dialogue: 0,0:00:03.00,0:05:00.00,Kanji2,,0000,0000,0000,Karaoke4,{\pos(100,520)}{\fad(1000,5)}

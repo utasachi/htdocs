@@ -1,0 +1,8 @@
+<!--#config timefmt="%Y-%m-%d %H:%M" -->
+<!--#config errmsg="[SSI ERROR]" -->
+<meta charset="UTF-8">
+<!--#include virtual="/cgi-bin/mochi2_footer.py" -->
+<hr>
+[<a href="#top">🔝Top</a>] [<a href="/">🏠Home</a>]
+[<a href="/htdocs/">📖Manual</a>] <span class="small">mochikara web^2 all rights reserved.</span>
+</br></br>
