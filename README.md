@@ -373,16 +373,16 @@ x265フォーマットも未検証であり、PC性能に強く依存します�
 
 <center><b>5-3-1.スクロール歌詞(ass)の曲情報例</b></center>
 
->;[Song Info] 
->;title=月並みに輝け 
->;artist=結束バンド 
->;tieup=劇場総集編ぼっち・ざ・ろっく！ Re： OP 
->;year=2024 
->;utaid=356580 
->;vidid=WGAEIKRdSsE 
->;mtype=THE FIRST TAKE(on) 
->;ystart=720 
->;yend=200 
+>;[Song Info]  
+>;title=月並みに輝け  
+>;artist=結束バンド  
+>;tieup=劇場総集編ぼっち・ざ・ろっく！ Re： OP  
+>;year=2024  
+>;utaid=356580  
+>;vidid=WGAEIKRdSsE  
+>;mtype=THE FIRST TAKE(on)  
+>;ystart=720  
+>;yend=200  
 
 #### 5-3-2.タイムタグテキスト(txt)
 タイムタグ付テキスト形式の歌詞ファイルは、一般的にはWinampという音楽ファイル再生ソフトのプラグインで利用されています。このシステムでは、タイムタグ付きテキストをass形式の字幕ファイルに変換することで、MPC-BEでの利用を可能としております。以下にご留意ください。
