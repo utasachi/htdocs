@@ -3,10 +3,12 @@
 <meta charset="UTF-8">
 <!--#include virtual="/cgi-bin/mochi2_footer.py" -->
 <hr>
-[<a href="#top">🔝Top</a>] 
-[<a href="/">🏠Home</a>] 
-[<a href="/htdocs/">📖Manual</a>] 
-<a href="/bgv/">🖼️<span class="small">bgv</span></a>
-<a href="/cgi-bin/mochi2_ytdl.py">🛠️<span class="small">dev</span></a> - 
-<span class="small">mochikara web^2 all rights reserved.</span>
-</br></br>
+<center>
+[<a class="link-hover-b" href="#top">🔝Top</a>] 
+[<a class="link-hover-b" href="/">🏠Home</a>] 
+[<a class="link-hover-b" href="/htdocs/">📖Manual</a>] 
+<a class="link-hover-b" href="/bgv/">🖼️<span class="small-n">bgv</span></a>
+<a class="link-hover-b" href="/cgi-bin/mochi2_ytdl.py">🛠️<span class="small-n">dev</span></a> 
+<div class="small-n">mochikara web^2 all rights reserved.</div>
+</br>
+</center>

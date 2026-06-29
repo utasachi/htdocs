@@ -1,7 +1,7 @@
 /* mochi2_fancy.css */
 /* 全体 */
 body {
-    font-family: "Segoe UI", "Yu Gothic UI", sans-serif;
+    font-family: Meiryo, sans-serif;
     background: #ffffff;
     color: #000;
     margin: 0;
@@ -14,47 +14,44 @@ h1 {
 #indexlist {
     width: 100%;
     border-collapse: collapse;
-    font-size: 13px;
 }
 /* ヘッダー */
 #indexlist th {
     text-align: left;
     font-weight: normal;
-    padding: 3px 10px;
+    padding: 1px 5px;
+    line-height: 1.4;
     background: #EEE;
     border-bottom: 1px solid #dcdcdc;
     color: #333;
 }
 /* セル */
 #indexlist td {
-    padding: 3px 10px;
+    padding: 1px 5px;
+    line-height: 1.4;
 }
 /* 偶数行 */
 #indexlist tr.even {
-    background: #f8f8f8;
-}
-/* 行ホバー */
-#indexlist tr:hover {
-    background: #def;
-}
-/* クリック時 */
-#indexlist tr:active {
-    background: #cdf;
+    background: #f6f6ff;
 }
 /* リンク */
 #indexlist a {
     color: #000;
     text-decoration: none;
+    padding: 1px 4px;
+    border-radius: 3px;
+}
+/* リンクホバー */
+#indexlist a:hover {
+    background: #def;
+}
+/* リンククリック中 */
+#indexlist a:active {
+    background: #cdf;
 }
 /* アイコン列 */
 #indexlist .indexcolicon {
-    width: 24px;
-}
-/* 日付列 */
-#indexlist .indexcollastmod {
-    color: #666;
     width: 1%;
-    white-space: nowrap;
 }
 /* サイズ列 */
 #indexlist .indexcolsize {
@@ -62,17 +59,4 @@ h1 {
     color: #444;
     width: 1%;
     white-space: nowrap;
-}
-/* デフォルト（ファイル） */
-#indexlist .indexcolname a::before {
-    content: "📄";
-    margin-right: 6px;
-}
-/* フォルダ */
-#indexlist .indexcolname a[href$="/"]::before {
-    content: "📁";
-}
-/* ホバーなし*/
-#indexlist tr.nohover:hover {
-    background: inherit;
 }

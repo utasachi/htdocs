@@ -1,47 +1,58 @@
 <!--#config timefmt="%Y-%m-%d %H:%M" -->
 <!--#config errmsg="[SSI ERROR]" -->
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/htdocs/mochi2_header.css">
+<meta name="viewport" content="width=device-width, initial-scale=0.6">
+<link rel="stylesheet" href="/htdocs/mochi2_header.css?v=20260612">
+<link rel="stylesheet" href="/htdocs/mochi2_fancy2.css?v=20260612">
 <script src="/htdocs/mochi2_script.js" defer></script>
-<div class="explorer-header">
-    <a href="/">
-        <img src="/htdocs/mikuodori.gif">
-    </a>
-    <div class="header-text">
-        <div class="header-top">
-            <div class="header-title">
-<img src="/htdocs/mochikaraweb2.png" height="45" style="float:left; margin-right:10px;">
-v2.01 2026/06<br>
-🔈音量:<!--#include virtual="/htdocs/mochivol.txt" -->
+<table class="layout">
+    <tr>
+        <td rowspan="3"><a href="/"><img src="/htdocs/mikuodori.gif"></a></td>
+        <td colspan="2">
+            <div class="flex">
+                <div><img src="/htdocs/mochikaraweb2.png" height="53"></div>
+                <div class="right">
+                    <form class="search-form" action="/cgi-bin/mochi2_search.py" method="get">
+                        <input class="search-input" type="text" name="q" maxlength="64">
+                        <input class="btn" type="submit" value="検索">
+                    </form>
+                </div>
             </div>
-            <form class="header-search" action="/cgi-bin/mochi2_search.py" method="get">
-                <input type="text" name="q" size="32" maxlength="64">
-                <input type="submit" value="検索">
-            </form>
-        </div>
-        <div class="breadcrumb-row">
-            <div class="breadcrumb">
-                <!--#include virtual="/cgi-bin/mochi2_bread.py" -->
-            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="small-n">
+v2.01 2026/06 🔈音量:<!--#include virtual="/htdocs/mochivol.txt" -->
+        </td>
+        <td rowspan="2" class="right">
             <details class="menu" data-menu="main">
                 <summary class="menu-btn">︙</summary>
                 <div class="menu-content">
-                    <a href="/cgi-bin/mochi2_uwsc.py?k=down"   >🔉 音量(小)</a>
-                    <a href="/cgi-bin/mochi2_uwsc.py?k=up"     >🔊 音量(大)</a>
+                    <a href="/cgi-bin/mochi2_uwsc.py?k=down"   >音量(小) 🔉 </a>
+                    <a href="/cgi-bin/mochi2_uwsc.py?k=up"     >音量(大) 🔊</a>
                     <hr>
-                    <a href="/cgi-bin/mochi2_uwsc.py?k=next"   >⏭️ 次の曲</a>
-                    <a href="/cgi-bin/mochi2_uwsc.py?k=prior"  >⏮️ 前の曲</a>
-                    <a href="/cgi-bin/mochi2_uwsc.py?k=playst" >⏯️ 停止/再生</a>
-                    <a href="/cgi-bin/mochi2_uwsc.py?k=home"   >⏪ 曲始めから</a>
+                    <a href="/cgi-bin/mochi2_uwsc.py?k=next"
+                     onclick="return confirm('⏭️次の曲に切り替えますか？');" >次の曲 ⏭️</a>
+                    <a href="/cgi-bin/mochi2_uwsc.py?k=prior"
+                     onclick="return confirm('⏮️前の曲に切り替えますか？');" >前の曲 ⏮️</a>
+                    <a href="/cgi-bin/mochi2_uwsc.py?k=playst"
+                     onclick="return confirm('⏯️停止/再生切り替えますか？');">停止/再生 ⏯️</a>
+                    <a href="/cgi-bin/mochi2_uwsc.py?k=home"
+                     onclick="return confirm('⏪曲始めから再生しますか？');" >曲始めから ⏪</a>
                     <hr>
-                    <a href="/cgi-bin/mochi2_uwsc.py?k=fullsc" >🔳 全画面</a>
-                    <a href="/cgi-bin/mochi2_uwsc.py?k=track"  >🎶 次の音声</a>
-                    <a href="/cgi-bin/mochi2_uwsc.py?k=nextsb" >🔤 次の字幕</a>
+                    <a href="/cgi-bin/mochi2_uwsc.py?k=fullsc" >全画面 🔳</a>
+                    <a href="/cgi-bin/mochi2_uwsc.py?k=track"  >次の音声 🎶</a>
+                    <a href="/cgi-bin/mochi2_uwsc.py?k=nextsb" >次の字幕 🔤</a>
                     <hr>
-                    <a href="/cgi-bin/mochi2_uwsc.py?k=f1"     >⬆️ 字幕遅延減少</a>
-                    <a href="/cgi-bin/mochi2_uwsc.py?k=f2"     >⬇️ 字幕遅延増加</a>
+                    <a href="/cgi-bin/mochi2_uwsc.py?k=f1"     >字幕遅延減少 ⬆️</a>
+                    <a href="/cgi-bin/mochi2_uwsc.py?k=f2"     >字幕遅延増加 ⬇️</a>
                 </div>
             </details>
-        </div>
-    </div>
-</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="breadcrumb">
+<!--#include virtual="/cgi-bin/mochi2_bread.py" -->
+        </td>
+    </tr>
+</table>
