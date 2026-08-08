@@ -25,10 +25,10 @@ if (location.href.startsWith("file:///")) {
     const drive =
         decodeURIComponent(location.pathname).match(/^\/([A-Za-z]:)/)[1];
     document.querySelectorAll("a.mvlink").forEach(a => {
-    const path =
-        (drive + "/karaoke"
-        + decodeURIComponent(a.getAttribute("href")))
-        .replace(/\//g, "\\");
+        const path =
+            (drive + "/karaoke"
+            + decodeURIComponent(a.getAttribute("href")))
+            .replace(/\//g, "\\");
         a.href =
             "http://localhost:13579/browser.html?path="
             + encodeURI(path);
